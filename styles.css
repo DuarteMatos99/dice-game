@@ -1,0 +1,32 @@
+body {
+    background-color: #52575d;
+    color: #fff;
+    font-family: 'Contrail One', cursive;
+    text-align: center;
+}
+
+h1, h3 {
+    color: #fddb3a;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.title {
+    font-family: 'Contrail One', cursive;
+    font-size: 6rem;
+}
+
+.title span {
+    text-decoration: underline;
+}
+
+.dice {
+    margin: 5% 0 15% 0;
+}
+
+/* base components */
+.container {
+    padding: 7% 15% 0 15%;
+}
+
+
