@@ -29,4 +29,9 @@ h1, h3 {
     padding: 7% 15% 0 15%;
 }
 
-
+/* media query */
+@media(max-width: 1200px){
+    .dice{
+        width: 150px;
+    }
+}
