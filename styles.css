@@ -51,4 +51,8 @@ h3 {
     .dice {
         width: 150px;
     }
+
+    .play {
+        width: 400px;
+    }
 }
