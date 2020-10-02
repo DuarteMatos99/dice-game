@@ -1,35 +1,34 @@
-/* functions */
-
 // randomize a number between 1 to 6
-function randomNumber(){
-    return Math.floor(Math.random() * 6) + 1
+function randomNumber() {
+    return Math.floor(Math.random() * 6) + 1;
 }
 
 // changes title text
-function changeTitle(title){
-    return document.querySelector('.title').innerHTML = title
+function changeTitle(title) {
+    return (document.querySelector(".title").innerHTML = title);
 }
 
-// defines src property between the random number generator for each dice individually 
-function changeImage(dice, randomNumber){
-    return document.querySelector(dice).setAttribute('src', `images/dice${randomNumber}.png`)
+// defines src property between the random number generator for each dice individually
+function changeImage(dice, randomNumber) {
+    return document
+        .querySelector(dice)
+        .setAttribute("src", `images/dice${randomNumber}.png`);
 }
 
+function mainProgram() {
+    let player1 = randomNumber();
+    let player2 = randomNumber();
 
-let player1 = randomNumber()
-let player2 = randomNumber()
+    changeImage(".dice1", player1);
+    changeImage(".dice2", player2);
 
-
-changeImage('.dice1', player1)
-changeImage('.dice2', player2)
-
-
-if (player1 > player2) {
-    changeTitle('<span>Player 1</span> won!')
+    if (player1 > player2) {
+        changeTitle("<span>Player 1</span> won!");
+    } else if (player2 > player1) {
+        changeTitle("<span>Player 2</span> won!");
+    } else {
+        changeTitle("Draw");
+    }
 }
-else if (player2 > player1) {
-    changeTitle('<span>Player 2</span> won!')
-}
-else {
-    changeTitle('Draw')
-}
+
+document.querySelector(".play").addEventListener("click", mainProgram);

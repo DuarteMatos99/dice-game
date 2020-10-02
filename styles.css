@@ -1,18 +1,19 @@
 body {
     background-color: #52575d;
     color: #fff;
-    font-family: 'Contrail One', cursive;
+    font-family: "Contrail One", cursive;
     text-align: center;
 }
 
-h1, h3 {
+h1,
+h3 {
     color: #fddb3a;
     font-size: 2rem;
     margin: 0;
 }
 
 .title {
-    font-family: 'Contrail One', cursive;
+    font-family: "Contrail One", cursive;
     font-size: 6rem;
 }
 
@@ -24,14 +25,30 @@ h1, h3 {
     margin: 5% 0 15% 0;
 }
 
+.play {
+    background: none;
+    border-radius: 4px;
+    border: 2px solid #fddb3a;
+    color: #fff;
+    font-size: 28px;
+    padding: 10px 40px;
+    margin: 5% 0 0 0;
+    transition-duration: 1s;
+    width: 15%;
+}
+
+.play:hover {
+    background-color: #fddb3a;
+}
+
 /* base components */
 .container {
     padding: 7% 15% 0 15%;
 }
 
 /* media query */
-@media(max-width: 1200px){
-    .dice{
+@media (max-width: 1200px) {
+    .dice {
         width: 150px;
     }
 }
